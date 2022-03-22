@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Hak Chat",
+    "slug": "hak-chat",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
