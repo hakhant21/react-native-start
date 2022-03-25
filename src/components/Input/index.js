@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, TextInput } from 'react-native';
+import { View } from 'react-native';
+import { TextInput, Text } from 'react-native-paper';
 import colors from './../../assets/theme/colors';
 import styles from './styles';
 

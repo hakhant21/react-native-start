@@ -1,15 +1,18 @@
 import React from 'react'
-import { View, ScrollView } from 'react-native'
+import { View, ScrollView, SafeAreaView } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import styles from './styles'
+
 
 const Container = ({style,children}) => {
   return (
-    <ScrollView>
-        <View style={[styles.wrapper, style]}>
-            {children}
-        </View>
-    </ScrollView>
-  )
+    <SafeAreaView style={[styles.container, style]}>
+      <ScrollView>
+        <StatusBar style='auto' />
+        <View>{children}</View>
+      </ScrollView>
+    </SafeAreaView>
+  );
 }
 
 export default Container
